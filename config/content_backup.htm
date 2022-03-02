@@ -1,0 +1,306 @@
+<h1>About</h1>
+<p>本學期的電腦輔助設計實習, 要求每一位學員根據本 HW template 的格式建立個人的作業倉儲與網頁.</p>
+<hr/>
+<p>你的學號</p>
+<p>網站倉儲: <a href="https://github.com/40923127-1/cad2021_hw">https://github.com/40923127-1/cad2021_hw</a></p>
+<p>網站連結: <a href="https://40923127-1.github.io/cad2021_hw/">https://40923127-1.github.io/cad2021_hw/</a></p>
+<p>其他與作者或作業相關資料說明或介紹</p>
+<h1>HW1</h1>
+<p>HW1 佔學期成績 25%</p>
+<p><span style="background-color: #ffff99;">HW1 必須在 2021.11.10 22:00 之前完成.<br/></span></p>
+<p><a href="https://github.com/mdecourse/cad2021/discussions/5">HW1 具體項目成果回報區</a>將於 2021.09.23 開啟, 於 <span style="background-color: #ff99cc;">2021.11.10 22:00 關閉.</span></p>
+<h4>作業一: meArm Robot 零件繪圖與機電運動模擬場景製作</h4>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step1</span>: 下載 <a href="https://drive.google.com/file/d/18ukdNlFB9yHY-FZSY-bTnzrPrNv0FE4D/view?usp=sharing">meARM.7z</a> 這個包含尚未完成組立的 meArm Robot 場景與雷射切割零件組立手冊.</p>
+<p style="padding-left: 60px;"><a href="/downloads/meArm_75-0040_v1.pdf">meArm_75-0040_v1.pdf</a> 則是另外一本組立參考手冊.</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step2</span>: 從課程網頁中的 <a href="https://mde.tw/cad2021/content/Compile%20CoppeliaSim.html">Compile CoppeliaSim 頁面</a>, 下載 <a href="https://drive.google.com/file/d/1hV8hHjjnLvUp-AEjd2iCfBYk067WSjcy/view?usp=sharing">coppeliaSim 4.1.0 官方版與 MSYS2 編譯版.7z</a> (檔案大小 412 MB, 解開壓縮後 1GB) 可攜套件.</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step3</span>: 在 HW1 中, 要求每一位學員透過程式亂數分配 (兩班實際亂數分配結果以上課時點擊下列按鈕所得結果為準) 所使用的兩套參數式 CAD 套件, 從軟體發展緣起開始進行介紹,  經過教育版軟體套件檔案的取得, 下載安裝以及配置使用. 根據 Step1 中的零件尺寸, 逐一完成 meArm Robot 各零件繪製與組立. 並將零件<a href="https://www.coppeliarobotics.com/helpFiles/en/importExport.htm">匯入</a> CoppeliaSim 進行組裝配置後, 以 <a href="https://www.coppeliarobotics.com/helpFiles/en/customUIPlugin.htm">UI 介面</a>中的 slider 控制 meArm Robot 各軸的旋轉作動.</p>
+<p style="padding-left: 30px;">2b CAD 套件分配結果: <a href="https://mde.tw/cad2021/downloads/online/2b_hw1_cad.txt">https://mde.tw/cad2021/downloads/online/2b_hw1_cad.txt</a></p>
+<h4>附件:</h4>
+<p style="padding-left: 30px;">1. CAD 套件分配表:</p>
+<p style="padding-left: 60px;">sw: Solidworks, inv: Inventor, nx: NX12, ons: Onshape, slvs: Solvespace</p>
+<p style="padding-left: 60px;"><a href="https://mde.tw/cad2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/6d0b8df27021529f910cbd0fde2222b6/raw/d5dbb42166e70d9bf4815e0f669957e40106f8fc/distrubute_cad_combination.py">2a 套件亂數分配結果</a></p>
+<p style="padding-left: 60px;"><a href="https://mde.tw/cad2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/6d0b8df27021529f910cbd0fde2222b6/raw/d5dbb42166e70d9bf4815e0f669957e40106f8fc/distrubute_cad_combination_b.py">2b 套件亂數分配結果</a></p>
+<p style="padding-left: 30px;">2. 在兩套 CAD 完成零件繪圖並轉入 CoppeliaSim 後, 為了建立 Dynamic Model 必須利用 <a href="https://www.coppeliarobotics.com/helpFiles/en/shapeEditModes.htm">shape edit modes</a> 轉為 <a href="https://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm">clean model</a>, 並與實際轉入的 STL 格式零件外形結合應用後建立模擬場景 (scenes).</p>
+<p style="padding-left: 30px;">3. meARM Robot <a href="https://www.youtube.com/watch?v=YdhpMqNa_mE">動態模擬場景</a>的建構, 可參考 <a href="https://www.youtube.com/watch?v=ucO0v5iel-c">0</a>, <a href="https://www.youtube.com/watch?v=jeviAIlh7wY">1</a>, <a href="https://www.youtube.com/watch?v=MrmHoGa3Kg4">2</a>, <a href="https://www.youtube.com/watch?v=43-xyipH9Ss">3</a>, <a href="https://www.youtube.com/watch?v=i9e4GXov8rk">4</a>, <a href="https://www.youtube.com/watch?v=7f1jzC6Uptg">5</a>, <a href="https://www.youtube.com/watch?v=xadyMQJxjnw">6</a>, <a href="https://www.youtube.com/watch?v=SQhKlnNnzuQ">7</a>, 也可參考 <a href="https://github.com/mdecourse/models/blob/master/robots/non-mobile/uarm.ttm">Uarm Robot model</a> 與相關<a href="https://www.youtube.com/watch?v=OqPVK__z9Ek">影片</a>.</p>
+<p style="padding-left: 30px;">4. CoppeliaSim design dynamic simulations <a href="https://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">說明頁面</a>.</p>
+<p style="padding-left: 30px;">5. <a href="https://mde.tw/cad2021/downloads/lua/index.html">網際 Lua</a> 程式執行.</p>
+<p style="padding-left: 30px;">6. <a href="/downloads/meArm.slvs">meArm.slvs</a>, <a href="/downloads/meArm_in_solvespace.slvs">meArm_in_solvespace.slvs</a></p>
+<p style="padding-left: 30px;">7. UI 介面程式參考:</p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function closeEventHandler(h)
+    sim.addLog(sim.verbosity_scriptinfos,'Window '..h..' is closing...')
+    simUI.hide(h)
+end
+
+function joint1_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta1 set to '..newVal)
+    sim.setJointTargetPosition(joint1, newVal*deg)
+end
+
+function joint2_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta2 set to '..newVal)
+    sim.setJointTargetPosition(joint2, newVal*deg)
+end
+
+function joint3_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta3 set to '..newVal)
+    sim.setJointTargetPosition(joint3, newVal*deg)
+end
+
+function joint16_rotate(ui,id,newVal)
+    simUI.setLabelText(ui,3000,'theta16 set to '..newVal)
+    sim.setJointTargetPosition(joint16, newVal*deg)
+    sim.setJointTargetPosition(joint20, -newVal*deg)
+end
+
+function sysCall_init()
+    -- do some initialization here
+    joint1 = sim.getObjectHandle('motor1')
+    joint2 = sim.getObjectHandle('motor2')
+    joint3 = sim.getObjectHandle('motor3')
+    joint16 = sim.getObjectHandle('motor16')
+    joint20 = sim.getObjectHandle('motor20')
+    i = 0
+    deg = math.pi/180
+    print(i)
+    xml = [[
+&lt;ui closeable="true" on-close="closeEventHandler" resizable="true"&gt;
+    &lt;label text="This is a demo of the CustomUI plugin. Browse through the tabs below to explore all the widgets that can be created with the plugin." wordwrap="true" /&gt;
+    &lt;tabs&gt;
+        &lt;tab title="Numeric"&gt;a
+            &lt;label text="Sliders can be oriented horizontally or vertically, and have optional properties that can be set (in the XML) such as minimum and maximum value." wordwrap="true" /&gt;
+            &lt;label text="" id="3000" wordwrap="true" /&gt;
+            &lt;label text="theta1" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
+            minimum="0" maximum="360" on-change="joint1_rotate" /&gt;
+            &lt;label text="theta2" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
+            minimum="-90" maximum="65" on-change="joint2_rotate" /&gt;
+            &lt;label text="theta3" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
+            minimum="-90" maximum="185" on-change="joint3_rotate" /&gt;
+            &lt;label text="theta16" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
+            minimum="0" maximum="15" on-change="joint16_rotate" /&gt;
+        &lt;/tab&gt;
+    &lt;/tabs&gt;
+&lt;/ui&gt;
+]]
+    ui=simUI.create(xml)
+    
+end</pre>
+<p><img alt="" class="add_border" height="282" src="/images/meArm_linkage_dimension.png" width="600"/></p>
+<p>(From: <a href="/downloads/2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf">2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf</a>)</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/2pFReCfDZsU" title="YouTube video player" width="560"></iframe></p>
+<h2>CAD1 繪圖</h2>
+<p>CAD1 指各學員所分配到的第一套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
+<p>CAD1 緣起說明與介紹</p>
+<p>請不要直接從找到的 CAD1 套件說明複製貼上, 而是應該要看完各種參考資料後, 重新打字彙整.</p>
+<h3>CAD1 安裝配置</h3>
+<p><a href="https://mde.tw/cad2021/content/HW_template.html">從這裡下載SW2020的安裝檔</a></p>
+<p>解壓縮之後啟動根目錄裡的<strong>setup.exe，</strong>進去之後需要輸入產品序號和伺服連接埠，在根目錄的read.txt裡。</p>
+<h4>VPN</h4>
+<p>安裝過程需要在學校的ip下執行，要使用需要先去<span style="color: #ff0000;"><em><a href="https://ecare.nfu.edu.tw/" style="color: #ff0000;">ecare</a></em></span>申請，接著按照<a href="https://bat-nfucc.nfu.edu.tw/zh/download/download-network/ssl-vpn">這個網頁</a>的流程執行</p>
+<p><a href="https://youtu.be/w6SleLu-tSc">Solidworks安裝影片</a></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/w6SleLu-tSc" width="560"></iframe></p>
+<p></p>
+<h3>CAD1 操作流程</h3>
+<p>CAD1 指各學員所分配到的第一套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
+<p>CAD1 零組件繪圖操作流程影片 (Youtube)</p>
+<p>CAD1 零組件繪圖教學影片 (Wink)</p>
+<p>var winkVideoData = { dataVersion: 1, frameRate: 10, buttonFrameLength: 5, buttonFrameOffset: 2, frameStops: { }, };</p>
+<p>CAD1 零組件繪圖教學影片 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 </span>零組件繪圖教學影片」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.<br/></span></p>
+<p>若使用 Solidworks 2017 版, 則將 SW2020 換為 SW2017, 其他套件 INV2020 代表 AutoDesk Inventor 2020 版, 還有 Onshape 與 Solvespace 等套件名稱.</p>
+<h2>CAD2 繪圖</h2>
+<p>CAD2 指各學員所分配到的第二套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
+<p>CAD2 緣起說明與介紹</p>
+<p>請不要直接從找到的 CAD2 套件說明複製貼上, 而是應該要看完各種參考資料後, 重新打字彙整.</p>
+<h3>CAD2 安裝配置</h3>
+<p>CAD2 指各學員所分配到的第二套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
+<p>CAD2 套件下載安裝與配置</p>
+<p>CAD2 套件下載安裝與配置影片 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 </span>套件下載安裝與配置影片」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.<br/></span></p>
+<p>若使用 Solidworks 2017 版, 則將 SW2020 換為 SW2017, 其他套件 INV2020 代表 AutoDesk Inventor 2020 版, 還有 Onshape 與 Solvespace 等套件名稱.</p>
+<h3>CAD2 操作流程</h3>
+<p>CAD2 指各學員所分配到的第二套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
+<p>CAD2 零組件繪圖操作流程影片 (Youtube)</p>
+<p>CAD2 零組件繪圖教學影片 (Wink)</p>
+<p>CAD2 零組件繪圖教學影片 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 </span>零組件繪圖教學影片」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.<br/></span></p>
+<p>若使用 Solidworks 2017 版, 則將 SW2020 換為 SW2017, 其他套件 INV2020 代表 AutoDesk Inventor 2020 版, 還有 Onshape 與 Solvespace 等套件名稱.</p>
+<h2>運動場景</h2>
+<h4>CAD1:</h4>
+<p style="padding-left: 30px;">CAD1 零件轉出後轉入 CoppeliaSim 操作影片 (Youtube)</p>
+<p style="padding-left: 30px;">CAD1 零件轉入 CoppeliaSim 教學影片 (Wink)</p>
+<p style="padding-left: 30px;">CAD1 轉入 Coppeliasim 教學影片 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 </span>零件轉入 CoppeliaSim 教學影片」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.<br/></span></p>
+<h4>CAD2:</h4>
+<p style="padding-left: 30px;">CAD2 零件轉出後轉入 CoppeliaSim 操作影片 (Youtube)</p>
+<p style="padding-left: 30px;">CAD2 零件轉入 CoppeliaSim 教學影片 (Wink)</p>
+<p style="padding-left: 30px;">CAD2 轉入 Coppeliasim 教學影片 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 </span>零件轉入 CoppeliaSim 教學影片」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.</span></p>
+<p>若使用 Solidworks 2017 版, 則將 SW2020 換為 SW2017, 其他套件 INV2020 代表 AutoDesk Inventor 2020 版, 還有 Onshape 與 Solvespace 等套件名稱.</p>
+<p></p>
+<p></p>
+<h1>HW1-1</h1>
+<p>HW1-1 佔學期成績 15%</p>
+<p><span style="background-color: #ffff99;">HW1-1 必須在 2021.12.01 22:00 之前完成.<br/></span></p>
+<p><a href="https://github.com/mdecourse/cad2021/discussions/6">HW1-1 具體項目成果回報區</a>將於 2021.11.18 開啟, 於 <span style="background-color: #ff99cc;">2021.12.01 22:00 關閉.</span></p>
+<h4>作業 1-1: Mirobot 機械手臂場景組合</h4>
+<p>說明: meArm Robot 有四個自由度, 請根據 HW1 的零組件繪製組立與 CoppeliaSim 運動場景模擬, 延伸至 <a href="https://mde.tw/cad2021/content/Task1-1.html">Task1-1</a> 中六個自由度的 Mirobot 機械手臂.</p>
+<p><a href="https://drive.google.com/file/d/1hnoMQ1Hh_Hgdxh7Aym4q43DzLjOWUanR/view?usp=sharing">mirobot_part1_to_part5.7z</a> 為取自  <a href="https://github.com/wlkata/Mirobot-STL">https://github.com/wlkata/Mirobot-STL</a> 的參考零件. 請利用場景中 Mirobot STL 零件, 組合為可以透過 <a href="https://www.coppeliarobotics.com/helpFiles/en/customUIPlugin.htm">UI 介面</a>中的 slider 控制各軸作動旋轉的運動模型.</p>
+<p>請根據 <a href="https://mde.tw/cad2021/content/Task1-1.html">Task1-1</a> 中的說明, 完成各項指定任務.</p>
+<h1>HW2</h1>
+<p>HW2 佔學期成績 20%</p>
+<p><span style="background-color: #ffff99;">HW2 必須在 2021.12.22 22:00 之前完成.</span></p>
+<p><a href="https://github.com/mdecourse/cad2021/discussions/7">HW2 具體項目成果回報區</a>將於 2021.12.09 開啟, 於 <span style="background-color: #ff99cc;">2021.12.22 22:00 關閉.</span></p>
+<p>meArm 逆向運動學與網際參數式 CAD API 結合應用.</p>
+<p>請將 <a href="https://github.com/mdecourse/meArm">https://github.com/mdecourse/meArm</a> 中的 meArm Robot 逆向運動學程式, 改為 Lua 與 Python 程式, 使能套用至 HW1 所完成的 CoppeliaSim meArm 運動模擬場景. 並分別採 Lua, Legacy remote API 及 Bluezero remote API 逆向運動的方式進行控制.</p>
+<p>請利用 <a href="https://mde.tw/cad2021/content/Task%202.html">Task2</a> 中的 Solidworks, Inventor 與 NX API 程式控制 meArm Robot 零組件尺寸, 說明並討論如何透過網際程式控制 meArm Robot 的零件尺寸, 並結合上述逆向運動學程式庫, 使得自動化機電產品開發流程更容易滿足客製化需求.</p>
+<h4>參考:</h4>
+<p style="padding-left: 30px;"><a href="/downloads/2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf">2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf</a></p>
+<p style="padding-left: 30px;"><a href="/downloads/Robot Manipulator Control with Inverse Kinematics PD-Pseudoinverse Jacobian and Forward Kinematics Denavit Hartenberg.pdf">Robot Manipulator Control with Inverse Kinematics PD-Pseudoinverse Jacobian and Forward Kinematics Denavit Hartenber.pdf</a></p>
+<p style="padding-left: 30px;"><a href="/downloads/KINEMATIC ANALYSIS FOR ROBOT ARM.pdf">KINEMATIC ANALYSIS FOR ROBOT ARM.pdf</a></p>
+<p style="padding-left: 30px;"><a href="https://codebender.cc/user/MeArm">https://codebender.cc/user/MeArm</a></p>
+<p style="padding-left: 30px;"><a href="https://github.com/mdecourse/meArmPi">https://github.com/mdecourse/meArmPi</a></p>
+<p style="padding-left: 60px;"><a href="/downloads/MeArmPiTechnicalOverviewV0-3DRAFT.pdf">/downloads/MeArmPiTechnicalOverviewV0-3DRAFT.pdf</a></p>
+<p style="padding-left: 30px;"><a href="https://github.com/mdecourse/me-arm-ik">https://github.com/mdecourse/me-arm-ik</a></p>
+<p style="padding-left: 30px;"><a href="https://github.com/mdecourse/mearm_model">https://github.com/mdecourse/mearm_model</a></p>
+<p style="padding-left: 30px;"><a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2016_Projects/pas324_ml634/index.html">https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2016_Projects/pas324_ml634/index.html</a></p>
+<p style="padding-left: 60px;"><a href="https://github.com/mdecourse/InefficientSkittleSorter">https://github.com/mdecourse/InefficientSkittleSorter</a></p>
+<p style="padding-left: 30px;"><a href="https://mearm.com">https://mearm.com</a></p>
+<h1>HW3</h1>
+<p>HW3 為選項作業.</p>
+<p><a href="https://github.com/mdecourse/cad2021/discussions/9">HW3 具體項目成果回報區</a>將於 2021.12.09 開啟, 於 <span style="background-color: #ff99cc;">2022.01.05 22:00 關閉</span></p>
+<p><a href="https://mde.tw/cad2021/content/Task3.html">https://mde.tw/cad2021/content/Task3.html</a> </p>
+<p><a href="https://mde.tw/cad2021/content/Task4.html">https://mde.tw/cad2021/content/Task4.html</a></p>
+<p><a href="https://mde.tw/cad2021/content/Task5.html">https://mde.tw/cad2021/content/Task5.html</a></p>
+<p><a href="https://mde.tw/cad2021/content/Task6.html">https://mde.tw/cad2021/content/Task6.html</a></p>
+<p><a href="https://mde.tw/cad2021/content/Task7.html">https://mde.tw/cad2021/content/Task7.html</a></p>
+<p>請從上列 Tasks 中自行選擇項目內容完成 HW3.</p>
+<h1>W11</h1>
+<p></p>
+<h2>零件檔</h2>
+<p></p>
+<p><a href="https://drive.google.com/drive/folders/1s323ON8PrFlqRfSr2PfebzDyM0XrQBMY?usp=sharing">https://drive.google.com/drive/folders/1s323ON8PrFlqRfSr2PfebzDyM0XrQBMY?usp=sharing</a></p>
+<h2>WINK影片</h2>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: 
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/staic" data-varname="winkVideoData" height="648" width="1152">
+<source src="./../downloads/4連桿.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<h1>Ｗｉｎｋ</h1>
+<p></p>
+<p>如何下載wink</p>
+<p></p>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+    "2": [
+      { type: "gotoframe", rect: { x: 541, y: 316, width: 36, height: 14 }, target: 3 },
+    ],
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/staic" data-varname="winkVideoData" height="648" width="1152">
+<source src="./../downloads/123.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<h2>第一個</h2>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 7,
+  buttonFrameLength: 3,
+  buttonFrameOffset: 1,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/staic" data-varname="winkVideoData" height="1080" video="" width="1920">
+<source src="./../downloads/20211107.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<h2>第二個</h2>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<p></p>
+<script src="/get_page/%E7%AC%AC%E4%BA%8C%E5%80%8B/winktest-wink-files/winkPlayer.js" type="text/javascript"></script>
+<script src="/get_page/%E7%AC%AC%E4%BA%8C%E5%80%8B/winktest.js" type="text/javascript"></script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/staic" data-varname="winkVideoData" height="648" width="1152">
+<source src="/downloads/winktest.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+</div>
+<h1>Final project</h1>
+</div>
+<h3>mearm</h3>
+<p></p>
+<p>solidwoerks 零件檔 : <a href="https://drive.google.com/drive/folders/1VnkTNFma9xdGGTzpb5bBY_Jdb06VWeXu?usp=sharing">https://drive.google.com/drive/folders/1VnkTNFma9xdGGTzpb5bBY_Jdb06VWeXu?usp=sharing</a></p>
+<p></p>
+<p>solidworks組立檔 </p>
+<p>當初在組立的時候因為當機何謂進行存檔導致檔案遺失，便向同學借檔案</p>
+<p><a href="https://drive.google.com/drive/folders/12eATSILsgrhA-fZCOLbpyQioPzyT5xY4?usp=sharing">https://drive.google.com/drive/folders/12eATSILsgrhA-fZCOLbpyQioPzyT5xY4?usp=sharing</a></p>
+<h4>W16</h4>
+<p></p>
+<p><img alt="" height="631" src="/images/linkage-dimensioned.png" width="573"/></p>
+<p>如圖在solidworks上繪製</p>
+<p>然後組合起來輸出成STL檔</p>
+<p>0</p>
+<p>0</p>
+<p><img alt="" height="658" src="/images/螢幕擷取畫面 2022-01-16 013555.png" width="867"/></p>
+<p>然後在<span>coppeliasim 設定轉軸等</span></p>
+<p><span></span></p>
+<p>coppeliasim 組立與操作影片</p>
+<h4><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/uhfTjtW0_YI" width="560"></iframe></h4>
+<h4>遇到的一些問題</h4>
+<p></p>
+<p>在遇到三根桿連在一起的時候，軸的設定比較麻煩，一不小心就會互卡，還有原圖棕色的那根桿是獨立在外的使用dummy來帶動</p><h1>BGA0810教室網路設定</h1>
+<p>第一步</p>
+<p>關閉自動偵測proxy</p>
+<p><img alt="" height="963" src="/images/未命名.png" width="1152"/></p>
+<p>第二步</p>
+<p>關閉網卡的ipv4</p>
+<p><img alt="" height="648" src="/images/1.png" width="1152"/></p>
+<p><img alt="" height="648" src="/images/2.png" width="1152"/></p>
+<p>第三步</p>
+<p>確認ipv6的DNS</p>
+<p><img alt="" height="648" src="/images/3.png" width="1152"/></p>
+<p>第4步</p>
+<p>設定firefox的proxy</p>
+<p><img alt="" height="860" src="/images/4.png" width="1152"/></p>
+<h1>git指令</h1>
+</div>
+</div>
